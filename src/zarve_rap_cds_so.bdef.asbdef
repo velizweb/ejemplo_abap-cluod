@@ -1,0 +1,14 @@
+managed; //implementation in class zbp_arve_rap_cds_so unique;
+//strict ( 2 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZARVE_RAP_CDS_SO alias orders
+persistent table zarve_db_so
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+}
